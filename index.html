@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>True North VBS 2026 - St. Jude Thaddeus Catholic Church</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'forest': '#2d5016',
+                        'forest-light': '#4a7c2c',
+                        'sky': '#87ceeb',
+                        'earth': '#8b6f47',
+                        'aurora-teal': '#40e0d0',
+                        'aurora-purple': '#9370db',
+                        'pine': '#1e5631',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;600;700;800&display=swap');
+
+        body {
+            font-family: 'Nunito', sans-serif;
+        }
+
+        h1, h2, h3, h4 {
+            font-family: 'Fredoka', sans-serif;
+        }
+
+        .hero-gradient {
+            background: linear-gradient(135deg, #2d5016 0%, #4a7c2c 50%, #87ceeb 100%);
+        }
+
+        .aurora-gradient {
+            background: linear-gradient(90deg, #40e0d0 0%, #9370db 50%, #87ceeb 100%);
+        }
+
+        .card-shadow {
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #4a7c2c 0%, #2d5016 100%);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(45, 80, 22, 0.4);
+        }
+
+        .btn-secondary {
+            background: linear-gradient(135deg, #40e0d0 0%, #9370db 100%);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .btn-secondary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(64, 224, 208, 0.4);
+        }
+
+        .animal-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .animal-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+        }
+
+        .section-title {
+            position: relative;
+            display: inline-block;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 4px;
+            background: linear-gradient(90deg, #40e0d0 0%, #9370db 100%);
+            border-radius: 2px;
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-b from-sky-50 to-green-50">
+
+    <!-- Hero Section -->
+    <section class="hero-gradient text-white py-20 px-4 relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute top-10 left-10 text-9xl">🌲</div>
+            <div class="absolute top-40 right-20 text-8xl">⛰️</div>
+            <div class="absolute bottom-20 left-1/4 text-7xl">🦌</div>
+            <div class="absolute bottom-10 right-10 text-6xl">🌲</div>
+        </div>
+
+        <div class="max-w-6xl mx-auto text-center relative z-10">
+            <div class="mb-6">
+                <span class="inline-block bg-white text-forest px-6 py-2 rounded-full text-lg font-bold mb-4 shadow-lg">
+                    St. Jude Thaddeus Catholic Church
+                </span>
+            </div>
+
+            <h1 class="text-6xl md:text-7xl lg:text-8xl font-bold mb-6 drop-shadow-lg">
+                TRUE NORTH
+            </h1>
+
+            <p class="text-3xl md:text-4xl font-semibold mb-4 drop-shadow-md">
+                Vacation Bible School 2026
+            </p>
+
+            <p class="text-xl md:text-2xl mb-8 font-medium">
+                An Adventure in Faith, Fun, and Friendship!
+            </p>
+
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mt-12">
+                <a href="#registration" class="btn-primary text-white px-8 py-4 rounded-full text-xl font-bold shadow-lg">
+                    Register Your Child 🎉
+                </a>
+                <a href="#volunteer" class="btn-secondary text-white px-8 py-4 rounded-full text-xl font-bold shadow-lg">
+                    Volunteer With Us 🙌
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Event Details Section -->
+    <section id="event-details" class="py-16 px-4 bg-white">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="section-title text-5xl font-bold text-center text-forest mb-16">
+                Event Details
+            </h2>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Date Card -->
+                <div class="card-shadow bg-gradient-to-br from-green-50 to-blue-50 p-8 rounded-2xl text-center">
+                    <div class="text-6xl mb-4">📅</div>
+                    <h3 class="text-2xl font-bold text-forest mb-3">When</h3>
+                    <p class="text-xl font-semibold text-gray-700 mb-2">June 8-12, 2026</p>
+                    <p class="text-lg text-gray-600 font-medium">Monday - Friday</p>
+                    <p class="text-lg text-gray-600 font-medium">6:00 PM - 8:30 PM</p>
+                </div>
+
+                <!-- Location Card -->
+                <div class="card-shadow bg-gradient-to-br from-blue-50 to-purple-50 p-8 rounded-2xl text-center">
+                    <div class="text-6xl mb-4">📍</div>
+                    <h3 class="text-2xl font-bold text-forest mb-3">Where</h3>
+                    <p class="text-xl font-semibold text-gray-700 mb-2">St. Jude Thaddeus</p>
+                    <p class="text-lg text-gray-600 font-medium">Catholic Church</p>
+                    <p class="text-lg text-gray-600 font-medium">Parish Hall</p>
+                </div>
+
+                <!-- Age Card -->
+                <div class="card-shadow bg-gradient-to-br from-purple-50 to-pink-50 p-8 rounded-2xl text-center">
+                    <div class="text-6xl mb-4">👶</div>
+                    <h3 class="text-2xl font-bold text-forest mb-3">Who</h3>
+                    <p class="text-xl font-semibold text-gray-700 mb-2">All Elementary</p>
+                    <p class="text-lg text-gray-600 font-medium">Students Welcome!</p>
+                    <p class="text-lg text-gray-600 font-medium">Ages 5-12</p>
+                </div>
+            </div>
+
+            <!-- Image Placeholder -->
+            <div class="mt-12">
+                <div class="card-shadow bg-gradient-to-br from-forest-light to-pine rounded-2xl h-96 flex items-center justify-center overflow-hidden">
+                    <p class="text-white text-2xl font-bold text-center px-4">
+                        [Hero Image Placeholder - Church/VBS Scene]
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Registration Section -->
+    <section id="registration" class="py-16 px-4 bg-gradient-to-br from-green-50 via-blue-50 to-purple-50">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="section-title text-5xl font-bold text-center text-forest mb-16">
+                Join the Adventure!
+            </h2>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Child Registration -->
+                <div class="card-shadow bg-white p-10 rounded-2xl">
+                    <div class="text-7xl text-center mb-6">🎒</div>
+                    <h3 class="text-3xl font-bold text-forest text-center mb-4">
+                        Register Your Child
+                    </h3>
+                    <p class="text-lg text-gray-600 text-center mb-6 leading-relaxed">
+                        Sign up your little explorer for an unforgettable week of faith, friendship, and fun at True North VBS!
+                    </p>
+                    <div class="space-y-4 mb-6">
+                        <div class="flex items-start gap-3">
+                            <span class="text-2xl">✅</span>
+                            <p class="text-gray-700">Bible stories and adventures</p>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <span class="text-2xl">✅</span>
+                            <p class="text-gray-700">Outdoor games and activities</p>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <span class="text-2xl">✅</span>
+                            <p class="text-gray-700">Creative crafts and projects</p>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <span class="text-2xl">✅</span>
+                            <p class="text-gray-700">Snacks and fellowship</p>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <span class="text-2xl">✅</span>
+                            <p class="text-gray-700">Music and worship</p>
+                        </div>
+                    </div>
+                    <a href="YOUR_GOOGLE_FORM_LINK_HERE" target="_blank" class="btn-primary block text-white text-center px-8 py-4 rounded-full text-xl font-bold shadow-lg">
+                        Register Now! 🎉
+                    </a>
+                </div>
+
+                <!-- Volunteer Registration -->
+                <div id="volunteer" class="card-shadow bg-white p-10 rounded-2xl">
+                    <div class="text-7xl text-center mb-6">🙌</div>
+                    <h3 class="text-3xl font-bold text-forest text-center mb-4">
+                        Volunteer With Us
+                    </h3>
+                    <p class="text-lg text-gray-600 text-center mb-6 leading-relaxed">
+                        Help make this VBS amazing! We need volunteers for various roles to serve our young adventurers.
+                    </p>
+                    <div class="space-y-3 mb-6 text-gray-700">
+                        <div class="flex items-center gap-3">
+                            <span class="text-2xl">🍪</span>
+                            <p class="font-medium">Snacks Coordinator</p>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <span class="text-2xl">⚽</span>
+                            <p class="font-medium">Outdoor Games Leader</p>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <span class="text-2xl">🎨</span>
+                            <p class="font-medium">Crafts Helper</p>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <span class="text-2xl">📸</span>
+                            <p class="font-medium">Photography</p>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <span class="text-2xl">📋</span>
+                            <p class="font-medium">Registration Table</p>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <span class="text-2xl">👥</span>
+                            <p class="font-medium">Elementary Crew Leader</p>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <span class="text-2xl">🎬</span>
+                            <p class="font-medium">Sticky Scripture Cinema</p>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <span class="text-2xl">📖</span>
+                            <p class="font-medium">Bible Adventures Guide</p>
+                        </div>
+                    </div>
+                    <div class="bg-yellow-100 border-l-4 border-yellow-500 p-4 mb-6 rounded">
+                        <p class="text-yellow-800 font-semibold">
+                            ⏰ Volunteer Registration Deadline: May 22, 2026
+                        </p>
+                    </div>
+                    <a href="YOUR_VOLUNTEER_GOOGLE_FORM_LINK_HERE" target="_blank" class="btn-secondary block text-white text-center px-8 py-4 rounded-full text-xl font-bold shadow-lg">
+                        Sign Up to Volunteer! 🌟
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 px-4 bg-white">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="section-title text-5xl font-bold text-center text-forest mb-16">
+                About True North VBS
+            </h2>
+
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <p class="text-xl text-gray-700 leading-relaxed mb-6">
+                        Welcome to <span class="font-bold text-forest">True North VBS</span> - where adventure meets faith! This year's outdoor-themed Vacation Bible School will take children on an unforgettable journey through God's creation.
+                    </p>
+                    <p class="text-xl text-gray-700 leading-relaxed mb-6">
+                        Surrounded by the beauty of nature - from towering pine trees to majestic mountains, from playful otters to soaring eagles - children will discover that <span class="font-bold text-forest">Jesus is our True North</span>, guiding us through every adventure life brings.
+                    </p>
+                    <p class="text-xl text-gray-700 leading-relaxed mb-6">
+                        Through engaging Bible stories, hands-on crafts, exciting games, and memorable music, kids will learn how to navigate life with Jesus as their compass, always pointing them in the right direction.
+                    </p>
+                    <div class="bg-gradient-to-r from-aurora-teal to-aurora-purple p-6 rounded-xl text-white">
+                        <p class="text-2xl font-bold mb-2">🧭 "Jesus is my True North"</p>
+                        <p class="text-lg">The theme verse and message that will guide our week!</p>
+                    </div>
+                </div>
+
+                <div class="space-y-6">
+                    <div class="card-shadow bg-gradient-to-br from-forest to-forest-light rounded-2xl h-64 flex items-center justify-center">
+                        <p class="text-white text-xl font-bold text-center px-4">
+                            [Image Placeholder - Kids at VBS Activities]
+                        </p>
+                    </div>
+                    <div class="card-shadow bg-gradient-to-br from-sky to-aurora-teal rounded-2xl h-64 flex items-center justify-center">
+                        <p class="text-white text-xl font-bold text-center px-4">
+                            [Image Placeholder - Group Photo/Outdoor Theme]
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Daily Schedule Section -->
+    <section id="schedule" class="py-16 px-4 bg-gradient-to-br from-sky-50 to-green-50">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="section-title text-5xl font-bold text-center text-forest mb-16">
+                Our Daily Adventure Guide
+            </h2>
+
+            <p class="text-xl text-center text-gray-700 mb-12 max-w-3xl mx-auto">
+                Each day, we'll meet a new animal friend who will guide us through exciting activities and important lessons!
+            </p>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Day 1 - Ponder the River Otter -->
+                <div class="animal-card card-shadow bg-white rounded-2xl overflow-hidden">
+                    <div class="bg-gradient-to-br from-blue-400 to-teal-400 h-48 flex items-center justify-center">
+                        <div class="text-8xl">🦦</div>
+                    </div>
+                    <div class="p-6">
+                        <div class="bg-blue-100 text-blue-800 inline-block px-4 py-1 rounded-full text-sm font-bold mb-3">
+                            DAY 1 - Monday, June 8
+                        </div>
+                        <h3 class="text-2xl font-bold text-forest mb-2">
+                            Ponder the River Otter
+                        </h3>
+                        <p class="text-gray-600 text-lg">
+                            Dive into adventure as we learn about curiosity, playfulness, and exploring God's creation!
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Day 2 - Clawdia the Crab -->
+                <div class="animal-card card-shadow bg-white rounded-2xl overflow-hidden">
+                    <div class="bg-gradient-to-br from-red-400 to-orange-400 h-48 flex items-center justify-center">
+                        <div class="text-8xl">🦀</div>
+                    </div>
+                    <div class="p-6">
+                        <div class="bg-red-100 text-red-800 inline-block px-4 py-1 rounded-full text-sm font-bold mb-3">
+                            DAY 2 - Tuesday, June 9
+                        </div>
+                        <h3 class="text-2xl font-bold text-forest mb-2">
+                            Clawdia the Crab
+                        </h3>
+                        <p class="text-gray-600 text-lg">
+                            Discover how God protects us and gives us strength, just like Clawdia's strong shell!
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Day 3 - Kody the Kodiak Bear -->
+                <div class="animal-card card-shadow bg-white rounded-2xl overflow-hidden">
+                    <div class="bg-gradient-to-br from-amber-600 to-yellow-700 h-48 flex items-center justify-center">
+                        <div class="text-8xl">🐻</div>
+                    </div>
+                    <div class="p-6">
+                        <div class="bg-amber-100 text-amber-800 inline-block px-4 py-1 rounded-full text-sm font-bold mb-3">
+                            DAY 3 - Wednesday, June 10
+                        </div>
+                        <h3 class="text-2xl font-bold text-forest mb-2">
+                            Kody the Kodiak Bear
+                        </h3>
+                        <p class="text-gray-600 text-lg">
+                            Learn about courage and trusting God's strength in every situation with our bear friend!
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Day 4 - Earnest the Bald Eagle -->
+                <div class="animal-card card-shadow bg-white rounded-2xl overflow-hidden">
+                    <div class="bg-gradient-to-br from-indigo-400 to-blue-500 h-48 flex items-center justify-center">
+                        <div class="text-8xl">🦅</div>
+                    </div>
+                    <div class="p-6">
+                        <div class="bg-indigo-100 text-indigo-800 inline-block px-4 py-1 rounded-full text-sm font-bold mb-3">
+                            DAY 4 - Thursday, June 11
+                        </div>
+                        <h3 class="text-2xl font-bold text-forest mb-2">
+                            Earnest the Bald Eagle
+                        </h3>
+                        <p class="text-gray-600 text-lg">
+                            Soar to new heights as we explore God's perspective and rising above challenges!
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Day 5 - Bruce the Moose -->
+                <div class="animal-card card-shadow bg-white rounded-2xl overflow-hidden">
+                    <div class="bg-gradient-to-br from-green-600 to-emerald-700 h-48 flex items-center justify-center">
+                        <div class="text-8xl">🫎</div>
+                    </div>
+                    <div class="p-6">
+                        <div class="bg-green-100 text-green-800 inline-block px-4 py-1 rounded-full text-sm font-bold mb-3">
+                            DAY 5 - Friday, June 12
+                        </div>
+                        <h3 class="text-2xl font-bold text-forest mb-2">
+                            Bruce the Moose
+                        </h3>
+                        <p class="text-gray-600 text-lg">
+                            Stand tall in faith and celebrate all we've learned throughout our True North journey!
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Bonus - Juneau the Siberian Husky -->
+                <div class="animal-card card-shadow bg-white rounded-2xl overflow-hidden border-4 border-aurora-teal">
+                    <div class="bg-gradient-to-br from-purple-400 to-blue-400 h-48 flex items-center justify-center">
+                        <div class="text-8xl">🐺</div>
+                    </div>
+                    <div class="p-6">
+                        <div class="bg-purple-100 text-purple-800 inline-block px-4 py-1 rounded-full text-sm font-bold mb-3">
+                            BONUS FRIEND!
+                        </div>
+                        <h3 class="text-2xl font-bold text-forest mb-2">
+                            Juneau the Siberian Husky
+                        </h3>
+                        <p class="text-gray-600 text-lg">
+                            Our loyal companion throughout the week, teaching us about friendship and faithfulness!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Photo Gallery Section -->
+    <section id="gallery" class="py-16 px-4 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="section-title text-5xl font-bold text-center text-forest mb-16">
+                Memories from Past Adventures
+            </h2>
+
+            <p class="text-xl text-center text-gray-600 mb-12 max-w-3xl mx-auto">
+                Take a peek at the amazing times we've had at previous VBS events!
+            </p>
+
+            <!-- Photo Grid -->
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                <!-- Row 1 -->
+                <div class="card-shadow bg-gradient-to-br from-forest-light to-pine rounded-xl h-64 flex items-center justify-center">
+                    <p class="text-white font-bold text-center px-4">[Photo 1]</p>
+                </div>
+                <div class="card-shadow bg-gradient-to-br from-sky to-aurora-teal rounded-xl h-64 flex items-center justify-center">
+                    <p class="text-white font-bold text-center px-4">[Photo 2]</p>
+                </div>
+                <div class="card-shadow bg-gradient-to-br from-aurora-purple to-pink-400 rounded-xl h-64 flex items-center justify-center">
+                    <p class="text-white font-bold text-center px-4">[Photo 3]</p>
+                </div>
+                <div class="card-shadow bg-gradient-to-br from-amber-500 to-orange-500 rounded-xl h-64 flex items-center justify-center">
+                    <p class="text-white font-bold text-center px-4">[Photo 4]</p>
+                </div>
+
+                <!-- Row 2 -->
+                <div class="card-shadow bg-gradient-to-br from-green-500 to-teal-500 rounded-xl h-64 flex items-center justify-center">
+                    <p class="text-white font-bold text-center px-4">[Photo 5]</p>
+                </div>
+                <div class="card-shadow bg-gradient-to-br from-blue-500 to-indigo-500 rounded-xl h-64 flex items-center justify-center">
+                    <p class="text-white font-bold text-center px-4">[Photo 6]</p>
+                </div>
+                <div class="card-shadow bg-gradient-to-br from-red-500 to-pink-500 rounded-xl h-64 flex items-center justify-center">
+                    <p class="text-white font-bold text-center px-4">[Photo 7]</p>
+                </div>
+                <div class="card-shadow bg-gradient-to-br from-purple-500 to-blue-500 rounded-xl h-64 flex items-center justify-center">
+                    <p class="text-white font-bold text-center px-4">[Photo 8]</p>
+                </div>
+
+                <!-- Row 3 -->
+                <div class="card-shadow bg-gradient-to-br from-yellow-500 to-orange-500 rounded-xl h-64 flex items-center justify-center">
+                    <p class="text-white font-bold text-center px-4">[Photo 9]</p>
+                </div>
+                <div class="card-shadow bg-gradient-to-br from-teal-500 to-green-500 rounded-xl h-64 flex items-center justify-center">
+                    <p class="text-white font-bold text-center px-4">[Photo 10]</p>
+                </div>
+                <div class="card-shadow bg-gradient-to-br from-indigo-500 to-purple-500 rounded-xl h-64 flex items-center justify-center">
+                    <p class="text-white font-bold text-center px-4">[Photo 11]</p>
+                </div>
+                <div class="card-shadow bg-gradient-to-br from-pink-500 to-red-500 rounded-xl h-64 flex items-center justify-center">
+                    <p class="text-white font-bold text-center px-4">[Photo 12]</p>
+                </div>
+            </div>
+
+            <!-- Large Feature Image -->
+            <div class="mt-8">
+                <div class="card-shadow bg-gradient-to-br from-forest to-sky rounded-2xl h-96 flex items-center justify-center">
+                    <p class="text-white text-2xl font-bold text-center px-4">
+                        [Large Feature Photo - VBS Group Shot or Highlights]
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact/Footer Section -->
+    <footer class="bg-gradient-to-br from-forest to-pine text-white py-16 px-4">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-12 mb-12">
+                <!-- Contact Info -->
+                <div>
+                    <h3 class="text-3xl font-bold mb-6">Contact Us</h3>
+                    <div class="space-y-4 text-lg">
+                        <div class="flex items-start gap-3">
+                            <span class="text-2xl">📍</span>
+                            <div>
+                                <p class="font-semibold">St. Jude Thaddeus Catholic Church</p>
+                                <p class="text-green-100">Parish Hall</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <span class="text-2xl">📧</span>
+                            <div>
+                                <p class="font-semibold">Email</p>
+                                <a href="mailto:vbs@stjude.org" class="text-aurora-teal hover:text-aurora-purple transition-colors">
+                                    vbs@stjude.org
+                                </a>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <span class="text-2xl">📞</span>
+                            <div>
+                                <p class="font-semibold">Phone</p>
+                                <a href="tel:555-123-4567" class="text-aurora-teal hover:text-aurora-purple transition-colors">
+                                    (555) 123-4567
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-3xl font-bold mb-6">Quick Links</h3>
+                    <div class="space-y-3 text-lg">
+                        <a href="#registration" class="block text-green-100 hover:text-aurora-teal transition-colors">
+                            → Register Your Child
+                        </a>
+                        <a href="#volunteer" class="block text-green-100 hover:text-aurora-teal transition-colors">
+                            → Volunteer Registration
+                        </a>
+                        <a href="#schedule" class="block text-green-100 hover:text-aurora-teal transition-colors">
+                            → Daily Schedule
+                        </a>
+                        <a href="#about" class="block text-green-100 hover:text-aurora-teal transition-colors">
+                            → About True North VBS
+                        </a>
+                        <a href="#gallery" class="block text-green-100 hover:text-aurora-teal transition-colors">
+                            → Photo Gallery
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Call to Action Banner -->
+            <div class="bg-white text-forest rounded-2xl p-8 mb-12 text-center card-shadow">
+                <h3 class="text-3xl font-bold mb-4">Ready to Join the Adventure?</h3>
+                <p class="text-xl mb-6">Don't miss out on True North VBS 2026!</p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="#registration" class="btn-primary text-white px-8 py-3 rounded-full text-lg font-bold shadow-lg inline-block">
+                        Register Now 🎉
+                    </a>
+                    <a href="#volunteer" class="btn-secondary text-white px-8 py-3 rounded-full text-lg font-bold shadow-lg inline-block">
+                        Become a Volunteer 🌟
+                    </a>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div class="border-t border-green-400 pt-8 text-center">
+                <p class="text-green-100 text-lg">
+                    &copy; 2026 St. Jude Thaddeus Catholic Church - True North VBS
+                </p>
+                <p class="text-green-200 mt-2">
+                    Making disciples, one adventure at a time! 🧭
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Smooth Scroll Script -->
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
