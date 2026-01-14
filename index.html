@@ -83,8 +83,7 @@
             content: '';
             position: absolute;
             bottom: -10px;
-            left: 50%;
-            transform: translateX(-50%);
+            left: 0;
             width: 100px;
             height: 4px;
             background: linear-gradient(90deg, #40e0d0 0%, #9370db 100%);
@@ -216,34 +215,31 @@
                     <h3 class="text-3xl font-bold text-forest text-center mb-4">
                         Register Your Child
                     </h3>
-                    <p class="text-lg text-gray-600 text-center mb-6 leading-relaxed">
-                        Sign up your little explorer for an unforgettable week of faith, friendship, and fun at True North VBS!
+                    <p class="text-lg text-gray-600 mb-3 leading-relaxed">
+                        Send your little explorer on an outdoor adventure full of faith, friendship, and fun at True North VBS!
                     </p>
-                    <div class="space-y-4 mb-6">
-                        <div class="flex items-start gap-3">
-                            <span class="text-2xl">✅</span>
-                            <p class="text-gray-700">Bible stories and adventures</p>
-                        </div>
-                        <div class="flex items-start gap-3">
-                            <span class="text-2xl">✅</span>
-                            <p class="text-gray-700">Outdoor games and activities</p>
-                        </div>
-                        <div class="flex items-start gap-3">
-                            <span class="text-2xl">✅</span>
-                            <p class="text-gray-700">Creative crafts and projects</p>
-                        </div>
-                        <div class="flex items-start gap-3">
-                            <span class="text-2xl">✅</span>
-                            <p class="text-gray-700">Snacks and fellowship</p>
-                        </div>
-                        <div class="flex items-start gap-3">
-                            <span class="text-2xl">✅</span>
-                            <p class="text-gray-700">Music and worship</p>
-                        </div>
+
+                    <ul class="list-disc list-inside space-y-2 mb-6 text-gray-700">
+                        <li>Daily Bible stories and adventures</li>
+                        <li>Outdoor games and water activities</li>
+                        <li>Creative crafts and hands-on projects</li>
+                        <li>Tasty treats</li>
+                        <li>Music and dancing</li>
+                    </ul>
+                    <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+                        Registration is $15 per child with a maximum of $45 per family. Please contact the Parish Office if financial assistance is needed.
+                    </p>
+                    <div class="bg-yellow-100 border-l-4 border-yellow-500 p-4 mb-6 rounded">
+                        <p class="text-yellow-800 font-semibold">
+                            ★ ️Children ages 4 years old through incoming 6th grade are welcome (children must be 4 years old by June 8, 2026 to register)
+                        </p>
                     </div>
-                    <a href="YOUR_GOOGLE_FORM_LINK_HERE" target="_blank" class="btn-primary block text-white text-center px-8 py-4 rounded-full text-xl font-bold shadow-lg">
+                    <a href="YOUR_GOOGLE_FORM_LINK_HERE" target="_blank" class="btn-primary block text-white text-center px-8 py-4 rounded-full text-xl font-bold shadow-lg mb-4">
                         Register Now!
                     </a>
+                    <p class="text-md text-gray-400 text-center leading-relaxed">
+                        In-person registration is also available at the Parish Office.
+                    </p>
                 </div>
 
                 <!-- Volunteer Registration -->
@@ -253,47 +249,25 @@
                         Volunteer With Us
                     </h3>
                     <p class="text-lg text-gray-600 leading-relaxed mb-6">
-                        Teen and adult volunteers needed to help make this year's VBS a success!
-                        Adults volunteers MUST be Safe-Environment certified.
-                        If you're unsure if your training is up to date, please contact the <a href="#contact" class="text-blue-600">Parish Office</a> to find out.
+                        Teen and adult volunteers are needed to help make this year's VBS a success!
+                        Adult volunteers MUST be Safe-Environment certified.
+                        If you're unsure if your training is up to date, please contact the Parish Office to find out.
                     </p>
-                    <div class="space-y-3 mb-6 text-gray-700">
-                        <div class="flex items-center gap-3">
-                            <span class="text-2xl">🍪</span>
-                            <p class="font-medium">Snacks Coordinator</p>
-                        </div>
-                        <div class="flex items-center gap-3">
-                            <span class="text-2xl">⚽</span>
-                            <p class="font-medium">Outdoor Games Leader</p>
-                        </div>
-                        <div class="flex items-center gap-3">
-                            <span class="text-2xl">🎨</span>
-                            <p class="font-medium">Crafts Helper</p>
-                        </div>
-                        <div class="flex items-center gap-3">
-                            <span class="text-2xl">📸</span>
-                            <p class="font-medium">Photography</p>
-                        </div>
-                        <div class="flex items-center gap-3">
-                            <span class="text-2xl">📋</span>
-                            <p class="font-medium">Registration Table</p>
-                        </div>
-                        <div class="flex items-center gap-3">
-                            <span class="text-2xl">👥</span>
-                            <p class="font-medium">Elementary Crew Leader</p>
-                        </div>
-                        <div class="flex items-center gap-3">
-                            <span class="text-2xl">🎬</span>
-                            <p class="font-medium">Sticky Scripture Cinema</p>
-                        </div>
-                        <div class="flex items-center gap-3">
-                            <span class="text-2xl">📖</span>
-                            <p class="font-medium">Bible Adventures Guide</p>
-                        </div>
-                    </div>
-                    <div class="bg-yellow-100 border-l-4 border-yellow-500 p-4 mb-6 rounded">
-                        <p class="text-yellow-800 font-semibold">
-                            ⏰ Volunteer Registration Deadline: May 22, 2026
+                    <h4 class="text-xl font-bold text-forest mb-4">Volunteer Opportunities:</h4>
+                    <ul class="list-disc list-inside space-y-3 mb-6 text-gray-700">
+                        <li><span class="font-semibold">Elementary Crew Leader:</span> Lead a small group of kids from station to station.</li>
+                        <li><span class="font-semibold">Awesome Bible Adventures:</span> Explore each day's bible story and help bring the story to life.</li>
+                        <li><span class="font-semibold">Tundra Treats:</span> Help prepare and present treats to all the kids that help illustrate what they're learning.</li>
+                        <li><span class="font-semibold">Glacier Games:</span> Take part in outdoor games and water activities to get the kids moving! You can expect lots of hard work, fun, and high-fives.</li>
+                        <li><span class="font-semibold">Sticky Scripture Cinema:</span> Introduce the daily Bible Memory Buddy.</li>
+                        <li><span class="font-semibold">Mountain Music:</span> Lead singing and dancing to age-specific songs.</li>
+                        <li><span class="font-semibold">Compass Crafts:</span> Encourage creativity and bring the bible to life through hands-on crafts.</li>
+                        <li><span class="font-semibold">Registration:</span> Assist with registration, check in, and collecting registration fees.</li>
+                        <li><span class="font-semibold">Photography:</span> Take photos to document the key events from each day.</li>
+                    </ul>
+                    <div class="bg-blue-100 border-l-4 border-blue-500 p-4 mb-6 rounded">
+                        <p class="text-blue-500 font-semibold">
+                            Volunteer Registration Deadline: May 22, 2026
                         </p>
                     </div>
                     <a href="YOUR_VOLUNTEER_GOOGLE_FORM_LINK_HERE" target="_blank" class="btn-secondary block text-white text-center px-8 py-4 rounded-full text-xl font-bold shadow-lg">
