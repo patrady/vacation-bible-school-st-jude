@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>True North VBS 2026 - St. Jude Thaddeus Catholic Church</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌲</text></svg>">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -83,11 +84,22 @@
             content: '';
             position: absolute;
             bottom: -10px;
-            left: 0;
-            width: 100px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100%;
+            max-width: 90%;
             height: 4px;
             background: linear-gradient(90deg, #40e0d0 0%, #9370db 100%);
             border-radius: 2px;
+        }
+
+        @media (min-width: 768px) {
+            .section-title::after {
+                left: 0;
+                transform: none;
+                width: 100px;
+                max-width: none;
+            }
         }
     </style>
 </head>
@@ -168,7 +180,7 @@
     </section>
 
     <!-- About Section -->
-    <section id="about" class="py-16 px-4 bg-white">
+    <section id="about" class="py-16 px-4 bg-gradient-to-br from-green-50 via-blue-50 to-purple-50">
         <div class="max-w-6xl mx-auto">
             <h2 class="section-title text-5xl font-bold text-center text-forest mb-16">
                 About True North VBS
@@ -192,13 +204,8 @@
                 </div>
 
                 <div class="space-y-6">
-                    <div class="card-shadow bg-gradient-to-br from-forest to-forest-light rounded-2xl h-64 flex items-center justify-center">
-                        <img src="assets/images/theme/logo.png" alt="True North VBS Logo" class="h-full w-full object-contain p-4">
-                    </div>
-                    <div class="card-shadow bg-gradient-to-br from-sky to-aurora-teal rounded-2xl h-64 flex items-center justify-center">
-                        <p class="text-white text-xl font-bold text-center px-4">
-                            [Image Placeholder - Group Photo/Outdoor Theme]
-                        </p>
+                    <div class="rounded-2xl h-64 flex items-center justify-center">
+                        <img src="assets/images/theme/logo.png" alt="True North VBS Logo" class="h-full w-full object-contain">
                     </div>
                 </div>
             </div>
@@ -206,7 +213,7 @@
     </section>
 
     <!-- Registration Section -->
-    <section id="registration" class="py-16 px-4 bg-gradient-to-br from-green-50 via-blue-50 to-purple-50">
+    <section id="registration" class="py-16 px-4 bg-white">
         <div class="max-w-6xl mx-auto">
             <h2 class="section-title text-5xl font-bold text-center text-forest mb-16">
                 Join the Adventure!
@@ -283,7 +290,7 @@
     </section>
 
     <!-- Daily Schedule Section -->
-    <section id="schedule" class="py-16 px-4 bg-gradient-to-br from-sky-50 to-green-50">
+    <section id="schedule" class="py-16 px-4 bg-gradient-to-b from-blue-50 to-purple-50">
         <div class="max-w-7xl mx-auto">
             <h2 class="section-title text-5xl font-bold text-center text-forest mb-10">
                 Our Daily Adventure Guide
